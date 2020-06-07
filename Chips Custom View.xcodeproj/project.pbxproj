@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		EE98058224856A0900866AB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE98058124856A0900866AB2 /* AppDelegate.swift */; };
-		EE98058424856A0900866AB2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE98058324856A0900866AB2 /* SceneDelegate.swift */; };
 		EE98058624856A0900866AB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE98058524856A0900866AB2 /* ViewController.swift */; };
 		EE98058924856A0900866AB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE98058724856A0900866AB2 /* Main.storyboard */; };
 		EE98058B24856A0E00866AB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE98058A24856A0E00866AB2 /* Assets.xcassets */; };
 		EE98058E24856A0E00866AB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE98058C24856A0E00866AB2 /* LaunchScreen.storyboard */; };
 		EE98059924856A0F00866AB2 /* Chips_Custom_ViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE98059824856A0F00866AB2 /* Chips_Custom_ViewTests.swift */; };
 		EE9805A424856A0F00866AB2 /* Chips_Custom_ViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9805A324856A0F00866AB2 /* Chips_Custom_ViewUITests.swift */; };
+		EE9805B424856B3D00866AB2 /* ChipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9805B324856B3D00866AB2 /* ChipsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,6 @@
 /* Begin PBXFileReference section */
 		EE98057E24856A0900866AB2 /* Chips Custom View.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chips Custom View.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE98058124856A0900866AB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EE98058324856A0900866AB2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EE98058524856A0900866AB2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EE98058824856A0900866AB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EE98058A24856A0E00866AB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		EE98059F24856A0F00866AB2 /* Chips Custom ViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Chips Custom ViewUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE9805A324856A0F00866AB2 /* Chips_Custom_ViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chips_Custom_ViewUITests.swift; sourceTree = "<group>"; };
 		EE9805A524856A0F00866AB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE9805B324856B3D00866AB2 /* ChipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +100,12 @@
 			isa = PBXGroup;
 			children = (
 				EE98058124856A0900866AB2 /* AppDelegate.swift */,
-				EE98058324856A0900866AB2 /* SceneDelegate.swift */,
 				EE98058524856A0900866AB2 /* ViewController.swift */,
 				EE98058724856A0900866AB2 /* Main.storyboard */,
 				EE98058A24856A0E00866AB2 /* Assets.xcassets */,
 				EE98058C24856A0E00866AB2 /* LaunchScreen.storyboard */,
 				EE98058F24856A0E00866AB2 /* Info.plist */,
+				EE9805B324856B3D00866AB2 /* ChipsView.swift */,
 			);
 			path = "Chips Custom View";
 			sourceTree = "<group>";
@@ -259,9 +259,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE9805B424856B3D00866AB2 /* ChipsView.swift in Sources */,
 				EE98058624856A0900866AB2 /* ViewController.swift in Sources */,
 				EE98058224856A0900866AB2 /* AppDelegate.swift in Sources */,
-				EE98058424856A0900866AB2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +366,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +420,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -437,6 +437,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3QD684HZ3Y;
 				INFOPLIST_FILE = "Chips Custom View/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -444,7 +445,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gyosanila.Chips-Custom-View";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -455,6 +456,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3QD684HZ3Y;
 				INFOPLIST_FILE = "Chips Custom View/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,7 +464,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gyosanila.Chips-Custom-View";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
