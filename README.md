@@ -1,6 +1,6 @@
 # Chips Custom View
 
-Add chips on custom class view
+A [Chip](https://material.io/develop/ios/components/chips/) represents a complex entity in a small block, such as a contact. It is a rounded button that consists of a label, an optional chip icon, and an optional close icon. A chip can either be clicked or closed if it is checkable.
 
 # Preview
 
